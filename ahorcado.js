@@ -53,8 +53,8 @@ palabraAgregada.addEventListener('keydown', (evt) => {
 
 });
 function agregarPalabra(){
-    if(palabraAgregada.value.length<=3){
-        alert("Ingrese una palabra con minimo 3 letras ")
+    if(palabraAgregada.value.length<4){
+        alert("Ingrese una palabra con minimo 4 letras ")
     }else{
     palabraminusculas=textoIngresado.value
     let palabraBien=palabraminusculas.replace(/ /g, "");
